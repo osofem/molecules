@@ -1,12 +1,19 @@
 /**	
-*	molecules - Written by Oso Oluwafemi Ebenezer
+*	Written by Oso Oluwafemi osofem87@gmail.com
 */
 class Molecules{
 	constructor(){
 	}
 	
+	/**
+	*	Returns an object that contains the atoms and their number
+	*	function getMolecules
+	*	@param {string} mf The molecular formular of the compound
+	*	@returns {object} Contains the atom and their corresponding number
+	*/
 	getMolecules(mf){
-		var mf = mf.replace(/\[/g,"(").replace(/\]/g,")").replace(/\{/g,"(").replace(/\}/g,")")
+		var mf = mf.replace(/\[/g,"(").replace(/\]/g,")").replace(/\{/g,"(").replace(/\}/g,")").replace(/\s+/g,"");
+		if(/^\d+/.test(mf)) throw new SyntaxError("Molecular formula should not start with a number!");
 		var mol = {};
 		while(mf.includes("(")){
 			var x = mf.lastIndexOf("(");
@@ -35,6 +42,6 @@ class Molecules{
 		}
 		return mol;
 	}
-}
+};
 
 if(typeof module != 'undefined') module.exports = Molecules;
