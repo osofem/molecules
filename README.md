@@ -1,2 +1,2 @@
 # molecules
-Get atoms from a molucular formula
+Get the number of each atom from a molecular formula
