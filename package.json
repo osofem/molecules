@@ -1,6 +1,6 @@
 {
-  "name": "molecules",
-  "version": "v0.0.1",
+  "name": "molecules.js",
+  "version": "v0.0.3",
   "description": "Get the number of each atom from a molecular formula",
   "main": "molecules.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "formula"
   ],
   "author": "Oso Olwafemi <osofem87@gmail.com> (https://github.com/osofem)",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/osofem/molecules/issues"
   },

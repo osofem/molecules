@@ -1,8 +1,8 @@
-# molecules
+# molecules.js
 Get the number of each atom from a molecular formula
 
 ### Install
-Depending on the environment in which `molecules` will be used, it can be installed via:
+Depending on the environment in which `molecules.js` will be used, it can be installed via:
 
 Server-side usage
 1. Installing on node.js
@@ -14,9 +14,9 @@ Client-side usage
 1. Including the library from the rawgit.com CDN.<br>
 	You can do that by adding <code>&lt;script src=&quot;https&#58;&#47;&#47;cdn.rawgit.com/osofem/molecules/&lt;version tag&gt;/molecules.js&quot;&gt;&lt;/script&gt;</code> to your code. Replace <code>&lt;version tag&gt;</code> with the version targeted e.g. `v1.0.0`. Check [versions](https://github.com/osofem/molecules/tags) for the latest version (the latest version is always recommended).
 2. Downloading the source from GitHub.com<br>
-	You can also download bigarith.js from [releases](https://github.com/osofem/molecules/releases/) on github.com (the latest version is always recommended). Extract the files and include the bigarith.js file in your work.
+	You can also download `molecules.js` from [releases](https://github.com/osofem/molecules/releases/) on github.com (the latest version is always recommended). Extract the files and include the `molecules.js` file in your work.
   
-  ### Usage
+### Usage
   > In the server-side, always add the `var Molecules = require('molecules.js');` however every other thing remains the same in both server-side and client-side.
 
 ```javascript
@@ -32,6 +32,6 @@ console.log(ms.getMolecules("{[Co(NH3)4(OH)2]3Co}(SO4)3")); //This logs object {
 ```
 
 ### Rule
-1. The atomic symbols should always start with a capital letter followed by a small letter if the symbol is double lettered. E.g. `H` - Hydrogen, `C` - Carbon, `Co` - Cobalt (not CO).
+1. The atomic symbols should always start with a capital letter followed by a small letter if the symbol is double lettered. E.g. `H` - Hydrogen, `C` - Carbon, `O` - Oxygen, `Co` - Cobalt (not CO), `CO` - Carbon Monoxide.
 2. The `()`, `[]` and or `{}` brackets can be used to group the elements but should be properly nested.
 3. As this is suppose to get number of atoms from molecular formula, the formula should not start with a number (this will throw a `SnytaxError`). `2H2O` should be rewritten as `(H2O)2`.
