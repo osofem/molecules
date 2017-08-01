@@ -34,3 +34,4 @@ console.log(ms.getMolecules("{[Co(NH3)4(OH)2]3Co}(SO4)3")); //This logs object {
 ### Rule
 1. The atomic symbols should always start with a capital letter followed by a small letter if the symbol is double lettered. E.g. `H` - Hydrogen, `C` - Carbon, `Co` - Cobalt (not CO).
 2. The `()`, `[]` and or `{}` brackets can be used to group the elements but should be properly nested.
+3. As this is suppose to get number of atoms from molecular formula, the formula should not start with a number (this will throw a `SnytaxError`). `2H2O` should be rewritten as `(H2O)2`.
