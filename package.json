@@ -1,8 +1,9 @@
 {
   "name": "molecules.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get the number of each atom from a molecular formula",
-  "main": "molecules.js",
+  "main": "dist/molecules.js",
+  "types": "dist/molecules.d.ts",
   "prepublish": "tsc",
   "scripts": {
     "test": "(tsc && mocha)"
