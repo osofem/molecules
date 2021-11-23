@@ -16,7 +16,7 @@ const mc = new Molecules();
 console.log(mc.getMolecules("H2O")); //This logs object {H:2, O: 1}
 console.log(mc.getMolecules("H2SO4")); //This logs object {H:2, S: 1, O: 4}
 console.log(mc.getMolecules("C6H12O6")); //This logs object {C: 6, H: 12, O: 6}
-console.log(ms.getMolecules("C17H21NO4")); //This logs object {C: 17, H: 21, N: 1, O: 4}
+console.log(mc.getMolecules("C17H21NO4")); //This logs object {C: 17, H: 21, N: 1, O: 4}
 console.log(mc.getMolecules("Mg(OH)2")); //This logs object {Mg: 1, O: 2, H: 2}
 console.log(mc.getMolecules("K4[ON(SO3)2]2")); //This logs object {K: 4, O: 14, N: 2, S: 4}
 console.log(mc.getMolecules("(C5H5)Fe(CO)2CH3")); //This logs object {C: 8, H: 8, Fe: 1, O: 2}
